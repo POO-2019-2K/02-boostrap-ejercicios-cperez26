@@ -1,0 +1,13 @@
+.jumbotron{
+    background-color:  green;
+    color: white;
+}
+
+#form{
+    padding-left: 250px;
+    padding-right: 250px;
+    margin-bottom: 100px;
+}
+#btn1{
+    margin-left: 300px;
+}

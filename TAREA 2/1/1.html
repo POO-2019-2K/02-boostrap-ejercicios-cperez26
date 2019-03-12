@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Reservaciones</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="1.css" />
+    <link href="https://fonts.googleapis.com/css?family=Kanit|Lobster" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1>Hotel</h1>
+        <p>registro de reservaciones de un Hotel</p>
+    </div>
+    <div class="container-fluid">
+    <div class="espacio">
+        <div class="row justify-content-around " style="height: 450px">
+            <div class="col-4 " id = "gordo">
+                <form>
+                    <div class="form-group row">
+                        <label for="name" class="col-form-label">nombre</label>
+                        <input type="text" class="form-control" id="name" placeholder="Carlos Pérez">
+                    </div>
+                    <div class="form-group row">
+                        <label for="email" class="col-form-label">email</label>
+                        <input type="email" class="form-control" id="email" placeholder="cperez26@gmail.com">
+                    </div>
+                    <div class="form-group row">
+                        <select name="select" id="habitacion">
+                            <option value="no"> Tipo de habitacion </option>
+                            <option value="Individual"> Individual</option>
+                            <option value="Doble Uso Individual"> Doble Uso Individual</option>
+                            <option value="Doble"> Doble</option>
+                            <option value="Con cama Supletoria"> Con cama Supletoria</option>
+                            <option value="Triple"> Triple</option>
+                            <option value="Junior Suite"> Junior Suite</option>
+                            <option value="Suite"> Suite</option>
+                            <option value="Suite Nupcial"> Suite Nupcial</option>
+                        </select>
+                    </div>
+                    <div class="form-group row">
+                        <label for="reservacion" class="col-form-label">Dia de Llegada</label>
+                        <input type="date" class="form-control" id="reservacion">
+                    </div>
+                    <div class="form-group row">
+                            <label for="reservacionF" class="col-form-label">Dia de Salida</label>
+                            <input type="date" class="form-control" id="reservacionF">
+                    </div>
+                    <button type="button" id="btnAdd" class="btn btn-primary">Reservar</button>
+                </form>
+            </div>
+            <div class="col-4 ">
+                <table id="info" class="table ml-2">
+                    <thead>
+                        <tr>
+                            <th>
+                                Numero de Reservaciones
+                            </th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <td></td>
+                        <td></td>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+        <div class="row justify-content-around" style="height: 200px">
+            <div class="col-md-8">
+                <table id="hotel" class="table">
+                    <thead>
+                        <tr>
+                            <th>
+                                Nombre
+                            </th>
+                            <th>
+                                Email
+                            </th>
+                            <th>
+                                Dia de Llegada
+                            </th>
+                            <th>
+                                Dia de salida
+                            </th>
+                            <th>
+                                Dias de reservacion
+                            </th>
+                            <th>
+                                Tipo de Habitacion
+                            </th>
+                            <th>
+                                Precio
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+</div>
+        <script src="./main.js" type="module"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

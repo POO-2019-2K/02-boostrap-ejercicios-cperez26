@@ -1,0 +1,12 @@
+.jumbotron {
+    background-color: forestgreen;
+    color: white;
+}
+
+h1, p{
+    font-family: 'Lobster', cursive;
+}
+
+body{
+    font-family: 'Kanit', sans-serif;
+}
